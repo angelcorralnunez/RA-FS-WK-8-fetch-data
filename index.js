@@ -27,7 +27,8 @@ fetch(url).then((data) => {
         <td>${values.body}</td>
         </tr>`;
     });
-    document.getElementById("table_body").innerHTML = tableData;
+    // communicates with the DOM passing it into 
+    // HTML to display the table data
 }).catch((err) => {
     console.log(err);
 });
