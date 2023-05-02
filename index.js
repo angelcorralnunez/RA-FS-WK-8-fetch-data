@@ -29,6 +29,7 @@ fetch(url).then((data) => {
     });
     // communicates with the DOM passing it into 
     // HTML to display the table data
+    document.getElementById("table_body").innerHTML = tableData;
 }).catch((err) => {
     console.log(err);
 });
